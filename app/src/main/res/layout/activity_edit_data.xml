@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".Databases.EditData">
+
+    <TextView
+        android:id="@+id/txt_bidata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Biodata Santri"
+        android:textSize="30dp"
+        android:textColor="@color/colorBlack"
+
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/txt_bidata"
+        android:id="@+id/biodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/pertama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText_NamaLengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="Nama Lengkap"
+                android:inputType="textPersonName"
+                app:layout_constraintHorizontal_weight="2"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:layout_editor_absoluteX="16dp" />
+            <EditText
+                android:id="@+id/editText_No_HP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="No. Handpohne"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText_NamaLengkap"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/pertama"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/jur"
+                android:textAlignment="viewStart"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="Kelas Tahfidz :"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText_No_HP" />
+            <Spinner
+                android:id="@+id/kelas"
+                android:textAlignment="viewEnd"
+                android:layout_width="215dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="0dp"
+                android:entries="@array/kelas"
+                app:layout_constraintTop_toBottomOf="@+id/editText_No_HP"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:layout_editor_absoluteX="110dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/biodata"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="217dp"
+                android:layout_height="46dp"
+                android:background="@color/colorPrimary"
+                android:text="Save"
+                tools:ignore="TouchTargetSizeCheck"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/clear"
+                app:layout_constraintTop_toBottomOf="@+id/jurusan" />
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_marginLeft="40dp"
+                android:text="CLEAR"
+                tools:ignore="TouchTargetSizeCheck"
+                app:layout_constraintEnd_toStartOf="@+id/button"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/jur" />
+        </LinearLayout>
+        <Button
+            android:layout_below="@+id/Back"
+            android:id="@+id/tampildata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Back"
+
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </LinearLayout>
+</RelativeLayout>

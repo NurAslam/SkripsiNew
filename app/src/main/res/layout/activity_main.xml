@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_belajar"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:text="."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/baris2_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/baris1_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true">
+        <ImageButton
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:background="@drawable/b_recording"
+            android:layout_below="@+id/buttonKuis"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonRecording" />
+
+        <ImageButton
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:background="@drawable/b_mad"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonMad" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/baris1_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true">
+        <ImageButton
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:background="@drawable/b_belajar"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonBelajar" />
+
+        <ImageButton
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:background="@drawable/b_kuis"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonKuis" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/baris2_layout"
+        android:layout_centerHorizontal="true">
+        <ImageButton
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:background="@drawable/b_biodata"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonBiodata" />
+    </LinearLayout>
+<!--       -->
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/about"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/aboutme" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/exit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttonExit" />
+
+
+
+
+</RelativeLayout>

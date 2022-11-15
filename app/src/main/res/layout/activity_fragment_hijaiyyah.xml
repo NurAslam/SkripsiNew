@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hijaiyyah"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+
+    android:gravity="center"
+    tools:context=".Belajar.hijaiyyah_activity">
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_kho"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/kho" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_ha"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ha" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_ja"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ja" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_tsa"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/tsa" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_ta"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ta" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_ba"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ba" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_alif"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/alif" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_sho"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/shod" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_syin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/syin" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_sin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/sin" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_za"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/za" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_ro"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ro" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_dza"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/dzal" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_da"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/dal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_qof"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/qof" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_fa"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/fa" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_gho"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/gho" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_ain"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ain" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_dzo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/dzo" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_tho"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/tho" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_dho"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/dho" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_ya"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ya" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_wa"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/wa" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_haa"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ha_tebal" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_nun"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/nun" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_mim"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/mim" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_lam"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/lam" />
+
+            <ImageButton
+                android:id="@+id/hijaiyyah_kaf"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/kaf" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/huruf_hijaiyyah"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/transparent"
+       />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/help009"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="click"
+        android:background="@drawable/help"
+        tools:ignore="RtlHardcoded" />
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/back009"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="click"
+        android:background="@drawable/back"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>

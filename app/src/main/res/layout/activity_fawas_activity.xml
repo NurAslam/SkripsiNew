@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Fasur.Fawas_activity">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+
+            <ImageButton
+                android:id="@+id/kaf_ha_ya_ain_shod"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/kaf_ha_ya_ain_shod"
+                android:clickable="true" />
+
+
+
+            <ImageButton
+                android:id="@+id/yasin"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/b_yasin"
+                android:clickable="true" />
+
+            <ImageButton
+                android:id="@+id/ha_mim"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/ha_mim"
+                android:clickable="true" />
+
+            <ImageButton
+                android:id="@+id/shod"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fawas_shod"
+                android:clickable="true" />
+
+            <ImageButton
+                android:id="@+id/thoSin"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fawas_tho_sin"
+                android:clickable="true" />
+<!--            <ImageButton-->
+<!--                android:id="@+id/alif_lammim_ro"-->
+<!--                android:layout_width="116dp"-->
+<!--                android:layout_height="115dp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:background="@drawable/fawas_alif_lammim_ro"-->
+<!--                android:clickable="true" />-->
+            <ImageButton
+                android:id="@+id/alif_lamMim"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fawas_alif_lammim"
+                android:clickable="true" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/tampilFawas"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/fawas_alif_lammim" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/b_back"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/back"/>
+
+
+</RelativeLayout>
