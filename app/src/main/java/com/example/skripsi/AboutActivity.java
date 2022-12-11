@@ -9,15 +9,15 @@ import android.view.WindowManager;
 import android.widget.ImageButton;
 
 public class AboutActivity extends AppCompatActivity {
-    ImageButton next_button0;
+    ImageButton next_Button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        next_button0 = findViewById(R.id.exit01);
-        next_button0.setOnClickListener(new View.OnClickListener(){
+        next_Button = findViewById(R.id.exit01);
+        next_Button.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View view) {
                 startActivity(new Intent(AboutActivity.this, MainActivity.class));

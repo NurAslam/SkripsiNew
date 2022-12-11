@@ -31,30 +31,41 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/editText_NamaLengkap"
+                <EditText
+                    android:id="@+id/editText_NamaLengkap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="Nama Lengkap"
+                    android:inputType="textPersonName"
+                    app:layout_constraintHorizontal_weight="2"
+                    tools:ignore="TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteX="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints=""
-                android:ems="10"
-                android:hint="Nama Lengkap"
-                android:inputType="textPersonName"
-                app:layout_constraintHorizontal_weight="2"
-                tools:ignore="TouchTargetSizeCheck"
-                tools:layout_editor_absoluteX="16dp" />
-            <EditText
-                android:id="@+id/editText_No_HP"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:ems="10"
-                android:hint="No. Handpohne"
-                android:inputType="number"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText_NamaLengkap"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editText_No_HP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="No. Handpohne"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_NamaLengkap"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -105,8 +116,9 @@
                 android:id="@+id/button"
                 android:layout_width="217dp"
                 android:layout_height="46dp"
-                android:background="@color/colorPrimary"
+                android:background="@color/colorGreen"
                 android:text="Save"
+                android:textColor="@color/colorWhite"
                 tools:ignore="TouchTargetSizeCheck"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"

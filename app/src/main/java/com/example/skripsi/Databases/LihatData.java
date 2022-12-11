@@ -46,7 +46,6 @@ public class LihatData extends AppCompatActivity {
     private void getData(){
         Cursor cursor = dbhelper.oneData(id);
 
-
         if(cursor.moveToFirst()){
             String Nama = cursor.getString(cursor.getColumnIndex(DatabaseHelper.clm_namalkp));
             String Nohp = cursor.getString(cursor.getColumnIndex(DatabaseHelper.clm_nohp));

@@ -38,12 +38,7 @@ public class record_activity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
-
-        if (isMicrophonePresent()) {
-            getMicrophonePermission();
-        }
     }
-
 
     public void btnRecordPresed(View view) {
 
@@ -81,25 +76,11 @@ public class record_activity extends AppCompatActivity {
             Toast.makeText(this,"Recording is Playing", Toast.LENGTH_SHORT).show();
         }
         catch (Exception e) {
-             e.printStackTrace();
+            e.printStackTrace();
         }
 
     }
 
-    private boolean isMicrophonePresent() {
-        if(this.getPackageManager().hasSystemFeature(PackageManager.FEATURE_MICROPHONE)) {
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-    private void getMicrophonePermission() {
-        if(ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_DENIED) {
-            ActivityCompat.requestPermissions(this, new String[]
-                    {Manifest.permission.RECORD_AUDIO}, MICROPHONE_PERMISSION_CODE);
-        }
-    }
 
     private String getRecordingFilePath() {
         ContextWrapper contextWrapper = new ContextWrapper(getApplicationContext());

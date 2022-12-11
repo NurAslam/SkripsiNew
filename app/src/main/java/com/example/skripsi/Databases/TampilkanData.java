@@ -55,27 +55,27 @@ public class TampilkanData extends AppCompatActivity implements AdapterView.OnIt
         builder.setTitle("Pilih : ");
 
         //Add a list
-        String[] options = {"Edit Data","Lihat Data", "Hapus Data"};
+        String[] options = {"Lihat Data", "Hapus Data"};
         builder.setItems(options, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 switch (which){
                     case 0:
                         inflater = getLayoutInflater();
-                        Intent iddata = new Intent(TampilkanData.this, EditData.class);
-                        iddata.putExtra(DatabaseHelper.clm_id, id);
-                        startActivity(iddata);
-                }
-                switch (which){
-                    case 1:
-
-                        inflater = getLayoutInflater();
                         Intent iddata = new Intent(TampilkanData.this, LihatData.class);
                         iddata.putExtra(DatabaseHelper.clm_id, id);
                         startActivity(iddata);
                 }
+//                switch (which){
+//                    case 1:
+//
+//                        inflater = getLayoutInflater();
+//                        Intent iddata = new Intent(TampilkanData.this, EditData.class);
+//                        iddata.putExtra(DatabaseHelper.clm_id, id);
+//                        startActivity(iddata);
+//                }
                 switch (which){
-                    case 2:
+                    case 1:
 
                         AlertDialog.Builder builder1 = new AlertDialog.Builder(TampilkanData.this);
                         builder1.setMessage("Data ini akan dihapus.");
@@ -97,8 +97,6 @@ public class TampilkanData extends AppCompatActivity implements AdapterView.OnIt
                         AlertDialog alertDialog = builder1.create();
                         alertDialog.show();
                 }
-
-
             }
         });
 

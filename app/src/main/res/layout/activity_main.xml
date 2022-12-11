@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_belajar"
     tools:context=".MainActivity">
-
-
     <TextView
         android:text="."
         android:layout_width="wrap_content"
@@ -15,10 +13,6 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/textView" />
-
-
-
-
     <LinearLayout
         android:id="@+id/baris2_layout"
         android:layout_width="wrap_content"
@@ -56,14 +50,12 @@
             android:layout_alignBottom="@+id/textView"
             android:layout_centerHorizontal="true"
             android:id="@+id/buttonBelajar" />
-
         <ImageButton
             android:layout_width="250dp"
             android:layout_height="70dp"
-            android:background="@drawable/b_kuis"
-            android:layout_below="@+id/textView"
+            android:background="@drawable/b_biodata"
             android:layout_centerHorizontal="true"
-            android:id="@+id/buttonKuis" />
+            android:id="@+id/buttonBiodata" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -73,11 +65,11 @@
         <ImageButton
             android:layout_width="250dp"
             android:layout_height="70dp"
-            android:background="@drawable/b_biodata"
+            android:background="@drawable/b_kuis"
+            android:layout_below="@+id/textView"
             android:layout_centerHorizontal="true"
-            android:id="@+id/buttonBiodata" />
+            android:id="@+id/buttonGharib" />
     </LinearLayout>
-<!--       -->
     <ImageButton
         android:layout_width="70dp"
         android:layout_height="70dp"
@@ -93,8 +85,4 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:id="@+id/buttonExit" />
-
-
-
-
 </RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "647238468726",
+    "project_id": "quiz-hijaiyyah",
+    "storage_bucket": "quiz-hijaiyyah.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647238468726:android:5f5444094bf8c390048b57",
+        "android_client_info": {
+          "package_name": "com.example.skripsi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647238468726-qkp9sl49bfrdbtkoeu8e5kjt9fbdqnvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAodKinAtIJzrfM041AFBaRB2-D9MAdaFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647238468726-qkp9sl49bfrdbtkoeu8e5kjt9fbdqnvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

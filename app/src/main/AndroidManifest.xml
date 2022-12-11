@@ -4,6 +4,7 @@
     package="com.example.skripsi">
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,28 +13,26 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-
-        <activity android:name=".Databases.EditData" />
-        <activity android:name=".Databases.LihatData" />
-        <activity android:name=".Databases.TampilkanData" />
-        <activity android:name=".Databases.MainActivityDatabase" />
-        <activity android:name=".AboutActivity"
-            android:screenOrientation="landscape" ></activity>
+        <activity android:name=".Gharib.DetailBacaanGharib"></activity>
+        <activity android:name=".Rukun.DetailGharibActivity" />
+        <activity android:name=".Rukun.GharibActivity" />
+        <activity android:name=".Gharib.GharibActivityMain" />
+        <activity android:name=".GharibBacaan.DetailActitvity" />
+        <activity android:name=".GharibBacaan.GharibActivity2" />
+        <activity android:name=".GharibNew.DetailActivity" />
+        <activity android:name=".GharibNew.GharibActivity2" />
+        <activity android:name=".Ghorib.Gharib" />
+        <activity android:name=".Ghorib.GharibActivity" />
         <activity
-            android:name=".quiz.skor_kuis"
+            android:name=".quiz.Model.ResultActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".quiz.KuisActivity"
+            android:name=".Fasur.FawasActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".Belajar.hijaiyyah_activity"
+            android:name=".quiz.KuisActivity2"
             android:screenOrientation="landscape" />
-
-            android:name=".Fasur.Fawas_activity"
-            android:screenOrientation="landscape" />
-
-            android:name=".Recording.record_activity"
-            android:screenOrientation="landscape" />
+        <activity android:name=".Fasur.MadActivity" />
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="landscape">
@@ -43,11 +42,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="8487000" />
-
+        <activity
+            android:name=".Fasur.Fawas_activity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Recording.record_activity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Belajar.hijaiyyah_activity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Databases.TampilkanData" />
+        <activity android:name=".Databases.EditData" />
+        <activity android:name=".Databases.LihatData" />
+        <activity android:name=".Databases.MainActivityDatabase" />
+        <activity
+            android:name=".quiz.skor_kuis"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".quiz.KuisActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="landscape" />

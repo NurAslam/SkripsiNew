@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Gharib.DetailBacaanGharib">
+    <ScrollView
+        android:id="@+id/svScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/Rldesc"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_item_photo"
+                    android:text="Title"
+                    android:textSize="40sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/tvDesctiption"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvHeading"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:padding="5dp"
+                    android:text="Penjelasan"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDeskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGreen"
+                    android:layout_below="@+id/tvDesctiption"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Description"
+                    android:shadowColor="@color/colorBlack"
+                    android:padding="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDeskripsi"
+                    android:layout_margin="15dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:lineHeight="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorGreen"
+                    android:text="Share to Your Friend" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

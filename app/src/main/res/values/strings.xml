@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Belajar Mengaji</string>
     <string name="LOADING">LOADING...</string>
     <string name="skor">SKOR :</string>
     <string name="text7">click icon hijaiyah untuk menampilkan popup yang dipilih</string>
@@ -12,82 +11,14 @@
     <string name="d">D</string>
     <string name="c">C</string>
     <string name="b">B</string>
-    <string name="a">A</string>
-
+    <string name="app_name">Belajar Mengaji</string>
     <string name="hijaiyah">HIJAIYAH</string>
     <string name="hijaiyah1">huruf hijaiyah yaitu abjad arab yang dimulai dari (alif) sampai dengan (ya).</string>
-    <string name="harokat">HAROKAT</string>
-    <string name="harokat1">harokat atau tasykil adalah tanda baca atau diakritik yang ditempatkan pada huruf arab untuk memperjelas gerakan dan pengucapan huruf tersebut.</string>
-    <string name="tanwin">TANWIN</string>
-    <string name="tanwin1">tanwin adalah tanda baca/diakritik/harakat pada tulisan arab untuk menyatakan bahwa huruf pada akhir kata tersebut diucapkan layaknya bertemu dengan huruf nun mati.</string>
-    <string name="ikro">IQRO</string>
-    <string name="click">Click</string>
-    <string name="ikro1">iqra biasanya diterjemahkan dengan \'bacalah\',merupakan kata pertama dari wahyu yang disampaikan Allah SWT kepada Nabi Muhammad SAW .</string>
-    <string name="fathah">FATHAH</string>
-    <string name="fathah1">harokat fathah adalah harakat yang berbentuk seperti garis horizontal yang diletakkan diatas suatu huruf hijaiyah untuk melambangkan fonem \'A\'.</string>
-    <string name="kasroh">KASROH</string>
-    <string name="kasroh1">harokat kasroh adalah harokat yang berbentuk sepeti garis horizontal yang diletakkan dibawah suatu huruf hijaiyah untuk melambangkan fonem \'I\'.</string>
-    <string name="dhomah">DHOMAH</string>
-    <string name="dhomah1">harokat dhomah adalah harokat yang berbentuk wawu kecil yang diletakkan diatas suatu huruf hijaiyah untuk melambangkan fonem U\'.</string>
-    <string name="fathah_tain">FATHAH TAIN</string>
-    <string name="fathah_tain1">fathah tain dibaca dengan \'AN\'.</string>
-    <string name="kasroh_tain">KASROH TAIN</string>
-    <string name="kasroh_tain1">kasroh tain dibaca dengan \'IN\'.</string>
-    <string name="dhomah_tain">DHOMAH TAIN</string>
-    <string name="dhomah_tain1">domah tain dibaca dengan \'UN\'.</string>
-    <string name="iqro_1">IQRO 1</string>
-    <string name="iqro_1_1">bergaris miring diatas = fathah, dibaca \'A\'.</string>
-    <string name="iqro_2">IQRO 2</string>
-    <string name="iqro_2_1">huruf sambung boleh dibaca putus.</string>
-    <string name="iqro_3">IQRO 3</string>
-    <string name="iqro_3_1">huruf miring bergaris bawah = kasroh, dibaca \'I\'.</string>
-    <string name="mad_asli">MAD ASLI</string>
-    <string name="mad_asli_2">bertemu Alif \'tanpa tanda baca\' dibaca panjang (2 ketukan).</string>
-    <string name="aa">(AA)</string>
-    <string name="aa1">juga dibaca panjang (2 ketukan).</string>
-    <string name="ya_setelah_aa">YA setelah AA</string>
-    <string name="ya_setelah_aa1">ya tanpa tanda baca dianggap tidak ada.</string>
-    <string name="mad_asli_i">MAD ASLI (I)</string>
-    <string name="mad_asli_i_1">bertemu ya sukun/ya mati dibaca panjang (2 ketukan).</string>
-    <string name="ya_setelah_ii">YA setelah II</string>
-    <string name="ya_setelah_ii_1">ya tanpa tanda baca dianggap tidak ada.</string>
-    <string name="mad_asli_u">MAD ASLI (U)</string>
-    <string name="mad_asli_u_1">u bertemu wawu sukun/wawu mati dibaca panjang (2 ketukan).</string>
-    <string name="uu">(UU)</string>
-    <string name="uu_1">uu juga dibaca panjang (2 ketukan).</string>
-    <string name="_00_60">00:60</string>
-    <string name="appbar_scrolling_view_behavior">xx</string>
-    <string name="ti_0">TI: 0</string>
-    <string name="pC_0">pC: 0</string>
-    <string name="music">Music Off</string>
-    <string name="sound">Sound Off</string>
     <string name="skor_anda">Skor Anda :</string>
     <string name="skor_tertinggi">Skor Tertinggi :</string>
     <string name="coba_lagi">Coba Lagi</string>
     <string name="daftarNama">Daftar Nama Santri</string>
-    <string-array name="angkatan">
-        <item>2010</item>
-        <item>2011</item>
-        <item>2012</item>
-        <item>2013</item>
-        <item>2014</item>
-        <item>2015</item>
-        <item>2016</item>
-        <item>2017</item>
-        <item>2018</item>
-        <item>2019</item>
-        <item>2020</item>
-        <item>2021</item>
-        <item>2022</item>
-        <item>2023</item>
-        <item>2024</item>
-        <item>2025</item>
-        <item>2026</item>
-        <item>2027</item>
-        <item>2028</item>
-        <item>2029</item>
-        <item>2030</item>
-    </string-array>
+
     <array name="kelas">
         <item>صغير (1)</item>
         <item>كبير (2)</item>

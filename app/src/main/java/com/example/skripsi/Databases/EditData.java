@@ -39,8 +39,6 @@ public class EditData extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(EditData. this, TampilkanData.class);
                 startActivity(intent);
-
-
             }
         });
         clear = findViewById(R.id.clear);

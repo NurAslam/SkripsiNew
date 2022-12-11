@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -15,13 +16,15 @@ import android.widget.ImageView;
 import com.example.skripsi.MainActivity;
 import com.example.skripsi.R;
 
+import java.io.IOException;
 
 public class Fawas_activity extends AppCompatActivity {
 
-
+    MediaPlayer mp;
     Button back;
     ImageView TampilGambar;
     ImageButton show;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,26 +34,26 @@ public class Fawas_activity extends AppCompatActivity {
         show = (ImageButton) findViewById(R.id.alif_lamMim);
 
         final Animation animScale = AnimationUtils.loadAnimation(this, R.anim.anim_scale);
-//        show.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                TampilGambar.setVisibility(View.VISIBLE);
-//            }
-//        });
-//        show.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                TampilGambar.setVisibility(View.INVISIBLE);
-//            }
-//        });
+        show.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TampilGambar.setVisibility(View.VISIBLE);
+            }
+        });
+        show.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TampilGambar.setVisibility(View.INVISIBLE);
+            }
+        });
 //        Menambah Button Suara
 
-        final MediaPlayer SuaraAlifLamMim = MediaPlayer.create(this, R.raw.aliflammim);
-        final MediaPlayer SuaraKafHaYaAinShod = MediaPlayer.create(this, R.raw.fawas_kafhayaainshod);
-        final MediaPlayer SuaraThoSin = MediaPlayer.create(this, R.raw.fawas_thosin);
-        final MediaPlayer SuaraShod = MediaPlayer.create(this, R.raw.fawas_shod);
-        final MediaPlayer SuaraHamim = MediaPlayer.create(this, R.raw.fawas_hamim);
-        final MediaPlayer SuaraYasin = MediaPlayer.create(this, R.raw.fawas_yasin);
+        final MediaPlayer SuaraAlifLamMim = MediaPlayer.create(this, R.raw.aliflammim_aslam);
+        final MediaPlayer SuaraKafHaYaAinShod = MediaPlayer.create(this, R.raw.kafhayaainshod_aslam);
+        final MediaPlayer SuaraThoSin = MediaPlayer.create(this, R.raw.thosin_aslam);
+        final MediaPlayer SuaraShod = MediaPlayer.create(this, R.raw.shod_aslam);
+        final MediaPlayer SuaraHamim = MediaPlayer.create(this, R.raw.hamim_aslam);
+        final MediaPlayer SuaraYasin = MediaPlayer.create(this, R.raw.yasin_aslam);
 
 //        Menambah Variabel Button
         ImageButton ButtonSuara = (ImageButton) this.findViewById(R.id.alif_lamMim);
@@ -63,17 +66,23 @@ public class Fawas_activity extends AppCompatActivity {
 
 //        Menghidupkan suara
         //        fitur buat nambah suara ketika di klik ada animasi
+
         ButtonSuara.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TampilGambar.setImageResource(R.drawable.popup_fawas_alif_lammim);
-                TampilGambar.startAnimation(animScale);
-                SuaraAlifLamMim.start();
+                if(SuaraHamim.isPlaying()) {
+
+                        SuaraAlifLamMim.pause();
+                }else{
+                        TampilGambar.setImageResource(R.drawable.popup_fawas_alif_lammim);
+                        TampilGambar.startAnimation(animScale);
+                }
             }
         });
         ButtonSuara7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SuaraKafHaYaAinShod.stop();
                 TampilGambar.setImageResource(R.drawable.popup_kaf_ha_ya_ain_shod);
                 TampilGambar.startAnimation(animScale);
                 SuaraKafHaYaAinShod.start();
@@ -82,6 +91,7 @@ public class Fawas_activity extends AppCompatActivity {
         ButtonSuara4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//
                 TampilGambar.setImageResource(R.drawable.b_shod);
                 TampilGambar.startAnimation(animScale);
                 SuaraShod.start();
@@ -90,6 +100,7 @@ public class Fawas_activity extends AppCompatActivity {
         ButtonSuara3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 TampilGambar.setImageResource(R.drawable.popup_fawas_tho_sin);
                 TampilGambar.startAnimation(animScale);
                 SuaraThoSin.start();
@@ -123,5 +134,4 @@ public class Fawas_activity extends AppCompatActivity {
             }
         });
     }
-
 }

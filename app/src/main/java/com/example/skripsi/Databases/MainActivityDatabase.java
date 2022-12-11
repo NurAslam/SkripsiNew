@@ -40,7 +40,7 @@ public class MainActivityDatabase extends AppCompatActivity {
         editText_NamaLengkap = findViewById(R.id.editText_NamaLengkap);
         editText_No_HP = findViewById(R.id.editText_No_HP);
         tampilData = findViewById(R.id.tampildata);
-        kelasT = findViewById(R.id.jurusan);
+        kelasT = findViewById(R.id.kelasT);
 
         tampilData.setOnClickListener(new View.OnClickListener() {
             @Override

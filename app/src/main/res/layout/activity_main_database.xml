@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Tambah Biodata Santri"
         android:textSize="30dp"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorGreen"
         android:layout_margin="20dp"
         android:textAlignment="center"
         android:textStyle="bold"/>
@@ -28,30 +28,44 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:orientation="vertical">
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/username_text_input_layout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
 
-           <EditText
-               android:id="@+id/editText_NamaLengkap"
+               <EditText
+                   android:id="@+id/editText_NamaLengkap"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:autofillHints=""
+                   android:ems="10"
+                   android:textColorHint="@color/colorBlack"
+                   android:textColor="@color/colorBlack"
+                   android:hint="Nama Lengkap"
+                   android:inputType="textPersonName"
+                   app:layout_constraintHorizontal_weight="2"
+                   tools:ignore="TouchTargetSizeCheck"
+                   tools:layout_editor_absoluteX="16dp" />
+           </com.google.android.material.textfield.TextInputLayout>
+           <com.google.android.material.textfield.TextInputLayout
                android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:autofillHints=""
-               android:ems="10"
-               android:hint="Nama Lengkap"
-               android:inputType="textPersonName"
-               app:layout_constraintHorizontal_weight="2"
-               tools:ignore="TouchTargetSizeCheck"
-               tools:layout_editor_absoluteX="16dp" />
-           <EditText
-               android:id="@+id/editText_No_HP"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:layout_marginTop="20dp"
-               android:ems="10"
-               android:hint="No. Handpohne"
-               android:inputType="number"
-               app:layout_constraintEnd_toEndOf="parent"
-               app:layout_constraintStart_toStartOf="parent"
-               app:layout_constraintTop_toBottomOf="@+id/editText_NamaLengkap"
-               tools:ignore="TouchTargetSizeCheck" />
+               android:layout_height="wrap_content">
+
+               <EditText
+                   android:id="@+id/editText_No_HP"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:ems="10"
+                   android:hint="No. Handpohne"
+                   android:textColor="@color/colorBlack"
+                   android:textColorHint="@color/colorBlack"
+                   android:inputType="number"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/editText_NamaLengkap"
+                   tools:ignore="TouchTargetSizeCheck" />
+           </com.google.android.material.textfield.TextInputLayout>
+
        </LinearLayout>
 
 <LinearLayout
@@ -66,7 +80,6 @@
         android:id="@+id/jur"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_weight="1"
         android:text="Kelas :"
         android:textSize="17dp"
@@ -74,10 +87,10 @@
         app:layout_constraintTop_toBottomOf="@+id/editText_No_HP" />
 
     <Spinner
-        android:id="@+id/jurusan"
+        android:id="@+id/kelasT"
         android:layout_width="220dp"
         android:layout_height="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="0dp"
         android:entries="@array/kelas"
         app:layout_constraintTop_toBottomOf="@+id/editText_No_HP"
         tools:ignore="TouchTargetSizeCheck"
@@ -99,8 +112,9 @@
         android:id="@+id/button"
         android:layout_width="217dp"
         android:layout_height="46dp"
-
         android:text="Save"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/clear"
@@ -123,6 +137,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tampilkan Data"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintTop_toBottomOf="@+id/button"
